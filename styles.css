@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+:root{
+    --primaryColor: #101820;
+    --secondColor: #009BF9;
+    --textColor: #F2FAFF;
+    --gray: rgba(42, 53, 62, 0.4);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none!important;
+    border: none;
+    list-style: none;
+}
+
+body{
+    font-family:'Open Sans', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+}
+
+#nombre {
+    font-size: 140%;
+}
+
+#logoMarinus{
+    height: 20%;
+    width: 20%;
+}
+
+
+
+#mainNavbar .nav-item .nav-link{
+    position: relative;
+    color: var(--primaryColor);
+}
+
+#mainNavbar .nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    transition: ease .40s;
+    -webkit-transition: ease .40s;
+    -moz-transition: ease .40s;
+    -ms-transition: ease .40s;
+    -o-transition: ease .40s;
+}
+
+#mainNavbar .nav-item:not(:last-child)  .nav-link:hover::after{
+    width: 100%;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler-:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+.section-title{
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.sub-title{
+    font-size: 11px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%) ;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+}
+
+#itemsNavBar{
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+.carousel-item {
+    height: 800px;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .carousel-caption {
+    bottom: 220
+  }
