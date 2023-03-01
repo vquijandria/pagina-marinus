@@ -25,6 +25,21 @@ body{
 
 /*Seccion NavBar*/
 
+#top-header {
+    width: 100vw;
+    height: 30px;
+    background-color: #009BF9;
+}
+#et-info{
+    color: white!important;
+}
+
+#top-header i{
+    color: white;
+}
+#top-header a{
+    color: white;
+}
 #nombre {
     font-size: 140%;
 }
@@ -88,8 +103,8 @@ section{
  /*Seccion Carrusel*/
 
 .carousel-item {
-    height: 500px;
-    min-height: 350px;
+    height: 90vh;
+    width: 100vw;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
