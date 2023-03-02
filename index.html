@@ -6,6 +6,7 @@
         <title>Marinus Ecolodge</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="origin">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">   
         <link rel="stylesheet" href="styles.css"> 
@@ -13,6 +14,7 @@
 </head>
 <body>
     <!--Comienzo Header-->
+    <div class="fixed-top">
     <div id="top-header">
       <div class="container clearfix">
           <div id="et-info"> <i class="bi bi-telephone-fill"></i>+51 940 205 214</span> <a href="mailto:marinuslodgereservas@gmail.com"><i class="bi bi-envelope-fill"></i>marinuslodgereservas@gmail.com</span></a> </div>
@@ -53,6 +55,7 @@
           </nav>
         </div>
     </header>
+  </div>
         <!--Header Fin-->
 
         <!--Image slider-->
@@ -75,7 +78,7 @@
       <img class="d-block w-100" src="images/imagen2.jpeg" alt="Third slide">
     </div>
     <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Fourth slide">
+        <img class="d-block w-100" src="images/cuarto1.jpeg" alt="Fourth slide">
       </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -88,16 +91,105 @@
   </a>
 </div>
 <!--Image Slider Fin-->
-
-<!--Reservas-->
-<div id="reservas-container">
+<!--Comienzo Restaurante-->
+<section>
+  <div class="container">
+    <div class="section-title">
+    <h3 class="text-center fw-bold main-title">Restaurante</h3>
+    <p class="text-center fw-bold ms-3 ps-5 sub-title">Alta gastronomia norteña</p>
 
 </div>
+    <div class="row">
+      <div class="col-md-12 col-lg-5">
+        <img src="images/comida1.jpeg" alt="about me" class="img-fluid rounded-2">
+        </div>
+        <div class="col-md-12 col-lg-7 gx-5 mt-3">
+          <p>Ceviches, Tiraditos, Causas, Carpaccios.
+            Sudados, Chicharrón, Arroz con mariscos, Chaufas, Pastas con pescados y/o mariscos, Pollo, carne de res, Chancho.
+            Parrilladas, horno de Barro.
+            
+            Especialidades del chef:
+            Menier de langostinos,
+            Chicharrón con cebolla acaramelada,
+            Pasta con salsa de melón entre otros manjares</p>
+            <a href="#" class="btn btn-primary">Especialidades del chef</a>
+            
+      
+    </div>
+    </div>
+    </div>
+</section>
+<!--Restaurante Fin-->
+<!--Reservas-->
+<section id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h3 class="text-center fw-bold main-title">Reservas</h3>
+      <p class="text-center fw-bold ms-2 ps-5 sub-title">Reserve aqui</p>
+    </div>
+    <div class="row gx-5">
+      <div class="col-lg-6 text-center">
+        <div class="contact-bg d-flex flex-column justify-content-center rounded-2">
+          <h5 class="py-3">Contactanos</h5>
+          <div class="contact-info d-flex flex-column gap-2 text-center">
+            <a href="tel:+51923326348" class="text-white"><i class="bi bi-telephone-fill me-3"></i>+51 923 326 348</a>
+            <a href="mailto:vquijandria@gmail.com" class="text-white"><i class="bi bi-envelope-fill me-3"></i>marinuslodge@gmail.com</a>
+            <a href="#" class="text-white"><i class="bi bi-geo-alt-fill me-3"></i>Canoas de Punta Sal</a>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4">
+        <form action="https://formsubmit.co/vquijandria@gmail.com" method="POST">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="nombre">Nombre Completo:</label>
+              <input type="text" name="Nombre" class="form-control" id="nombre" placeholder="Escriba su nombre">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="Mail" placeholder="Escriba su email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" name="Celular" class="form-control" id="telefono" placeholder="Escriba su teléfono">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="cantidad">Cantidad de Personas:</label>
+              <input type="number" name="Cantidad de personas" class="form-control" id="cantidad" placeholder="Ingrese la cantidad de personas">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="fecha-llegada">Fecha de llegada:</label>
+              <input type="date" name="Fecha de entrada" class="form-control" id="fecha-llegada">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="fecha-salida">Fecha de salida:</label>
+              <input type="date" name="Fecha de salida" class="form-control" id="fecha-salida">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="comentarios">Comentarios:</label>
+              <textarea class="form-control" name="Comentario" id="comentarios" rows="3"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 <!--Reservas Fin-->
 <!--Bootstrap JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 <!--Main JS-->
 <script src="main.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <!--Bootstrap slider scripts-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

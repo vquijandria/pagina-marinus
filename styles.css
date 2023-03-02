@@ -28,7 +28,7 @@ body{
 #top-header {
     width: 100vw;
     height: 30px;
-    background-color: #009BF9;
+    background-color: var(--secondColor);
 }
 #et-info{
     color: white!important;
@@ -36,6 +36,8 @@ body{
 
 #top-header i{
     color: white;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 #top-header a{
     color: white;
@@ -67,6 +69,10 @@ body{
     -o-transition: ease .40s;
 }
 
+.nav-item{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 #mainNavbar .nav-item:not(:last-child)  .nav-link:hover::after{
     width: 100%;
 }
@@ -103,7 +109,7 @@ section{
  /*Seccion Carrusel*/
 
 .carousel-item {
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -116,4 +122,30 @@ section{
     bottom: 220
   }
 
+  /*Seccion Reservas*/
+
+  .contact-bg{
+    background-color: var(--secondColor);
+    height: 70vh;
+    padding: 50px;
+}
+
+form input,textarea{
+    color: var(--primaryColor)!important;
+    border: 1px solid var(--gray)!important;
+}
+
+.form-control::placeholder{
+    color: rgba(231, 230, 230, 0.4);
+}
+.form-row {
+    margin-bottom: 20px;
+  }
   
+  label {
+    font-weight: bold;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
