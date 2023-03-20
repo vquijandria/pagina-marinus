@@ -37,7 +37,7 @@
                     <a class="nav-link active" aria-current="page" href="#">HOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">NOSOTROS</a>
+                    <a class="nav-link" href="#">SOBRE NOSOTROS</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#restaurante">RESTAURANTE</a>
@@ -46,7 +46,7 @@
                     <a class="nav-link" href="#ubicacion">UBICACIÓN</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">FOTOS</a>
+                    <a class="nav-link" href="#galeria">VIDEO & FOTOS</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link btn btn-primary" href="#reservas">RESERVAS</a>
@@ -61,6 +61,7 @@
         <!--Header Fin-->
 
         <!--Image slider-->
+        <div id="carouselContainer">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -92,7 +93,36 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+</div>
 <!--Image Slider Fin-->
+
+<!--Comienzo Sobre Nosotros-->
+<section id="sobreNosotros">
+  <div class="container">
+    <div class="section-title">
+    <h3 class="text-center fw-bold main-title">Sobre Nosotros</h3>
+    <p class="text-center fw-bold ms-3 ps-5 sub-title">Alta gastronomia norteña</p>
+
+</div>
+    <div class="row">
+      <div class="col-md-12 col-lg-5">
+        <img src="images/comida2.jpeg" alt="about me" class="img-fluid rounded-2">
+        </div>
+        <div class="col-md-12 col-lg-7 gx-5 mt-3">
+          <p>Ceviches, Tiraditos, Causas, Carpaccios.
+            Sudados, Chicharrón, Arroz con mariscos, Chaufas, Pastas con pescados y/o mariscos, Pollo, carne de res, Chancho.
+            Parrilladas, horno de Barro.
+            
+            Especialidades del chef:
+            Menier de langostinos,
+            Chicharrón con cebolla acaramelada,
+            Pasta con salsa de melón entre otros manjares</p>
+    </div>
+    </div>
+    </div>
+</section>
+
+<!--Sobre Nosotros Fin-->
 <!--Comienzo Restaurante-->
 <section id="restaurante">
   <div class="container">
@@ -139,10 +169,15 @@
 <section id="galeria">
   <div class="">
     <div class="section-title">
-    <h3 class="text-center fw-bold main-title">Fotos</h3>
-    <p class="text-center fw-bold ms-3 ps-5 sub-title">Galeria de fotos</p>
+    <h3 class="text-center fw-bold main-title">Video & Fotos</h3>
+    <p class="text-center fw-bold ms-3 ps-5 sub-title">Galeria</p>
 
 </div>
+      <div id="videoContainer">
+        <video width="720" height="400" controls><source src="images/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
      <div class="galleryContainer">
     <div class="gallery">
       <a href="images/cuarto1.jpeg" data-lightbox="models" data-title="Caption1">
@@ -195,21 +230,21 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="nombre">Nombre Completo:</label>
-              <input type="text" name="Nombre" class="form-control" id="nombre" placeholder="Escriba su nombre">
+              <input type="text" name="Nombre" class="form-control" id="nombre" placeholder="">
             </div>
             <div class="form-group col-md-6">
               <label for="email">Email:</label>
-              <input type="email" class="form-control" id="email" name="Mail" placeholder="Escriba su email">
+              <input type="email" class="form-control" id="email" name="Mail" placeholder="">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="telefono">Teléfono:</label>
-              <input type="tel" name="Celular" class="form-control" id="telefono" placeholder="Escriba su teléfono">
+              <input type="tel" name="Celular" class="form-control" id="telefono" placeholder="">
             </div>
             <div class="form-group col-md-6">
               <label for="cantidad">Cantidad de Personas:</label>
-              <input type="number" name="Cantidad de personas" class="form-control" id="cantidad" placeholder="Ingrese la cantidad de personas">
+              <input type="number" name="Cantidad de personas" class="form-control" id="cantidad" placeholder="">
             </div>
           </div>
           

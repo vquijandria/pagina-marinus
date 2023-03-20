@@ -27,6 +27,33 @@ body{
     scroll-behavior: smooth;
     scroll-padding-top: 5.5rem;
 }
+/*Responsive Design*/
+
+@media only screen and (max-width: 1000px) {
+    #navbarSupportedContent{
+        background-color: var(--thirdColor);
+        width: 100vw;
+    }
+    #carouselContainer{
+        height: 30vh;
+        max-height: 30vh;
+    }
+    .carousel-item{
+        height: 30vh;
+    }
+    .carousel-indicators li{
+        display: none;
+    }
+    .carousel-control-prev, .carousel-control-next{
+        max-height: 30vh;
+    }
+    .footer-copyright a {
+        display: block;   
+    }
+    #et-info{
+        font-size: 15px;
+    }
+  }
 
 /*Seccion NavBar*/
 
@@ -49,6 +76,10 @@ body{
 }
 #nombre {
     font-size: 140%;
+}
+
+#itemsNavBar{
+ margin-left: 190px;
 }
 
 #mainNavbar {
@@ -91,9 +122,7 @@ body{
     box-shadow: none;
 }
 
-#navbarSupportedContent{
-    background-color: var(--thirdColor);
-}
+
 
 section{
     padding: 5rem 0;
@@ -135,6 +164,11 @@ section{
 
   /*Seccion Galeria*/
 
+  #videoContainer{
+    display: flex;
+    justify-content: center;
+  }
+
   .galleryContainer {
     width: 100%;
     display: flex;
@@ -146,7 +180,7 @@ section{
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    grid-gap: 30px;
+    grid-gap: 33px;
   }
 
   .gallery img{
@@ -192,6 +226,10 @@ form input,textarea{
     color: #101820;
     
 
+  }
+
+  .footer-copyright i{
+    margin-right: -10px;
   }
 
   #map-container {
