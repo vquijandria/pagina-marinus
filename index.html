@@ -22,7 +22,8 @@
     <div class="fixed-top">
     <div id="top-header">
       <div class="container clearfix">
-          <div id="et-info"> <i class="bi bi-telephone-fill"></i><span>+51 940 205 214</span><a href="mailto:carlosangostov@gmail.com"><i class="bi bi-envelope-fill"></i><span>carlosangostov@gmail.com</span></a>
+          <div id="et-info"> 
+            <i class="bi bi-telephone-fill"></i><span>+51 940 205 214</span><a href="mailto:carlosangostov@gmail.com"><i class="bi bi-envelope-fill"></i><span>carlosangostov@gmail.com</span></a>
            </div>
       </div>
   </div>
@@ -40,7 +41,7 @@
                     <a class="nav-link active" aria-current="page" href="#">HOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">SOBRE NOSOTROS</a>
+                    <a class="nav-link" href="#sobreNosotros">SOBRE NOSOTROS</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#restaurante">RESTAURANTE</a>
@@ -72,20 +73,22 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <a href="#ubicacion"><img class="d-block w-100" src="images/imagen1.jpeg" alt="First slide"></a>
+      <a href="#ubicacion"><img class="imagen-carousel d-block w-100" src="images/imagen1.jpeg" alt="First slide"></a>
     </div>
     <div class="carousel-item">
-      <a href="#restaurante"><img class="d-block w-100" src="images/imagen5.jpeg" alt="Second slide"></a>
+      <a href="#"><img class="imagen-carousel d-block w-100" src="images/imagen7.jpeg" alt="Second slide"></a>
     </div>
     <div class="carousel-item">
-      <a href="#reservas"><img class="d-block w-100" src="images/imagen2.jpeg" alt="Third slide"></a>
+      <a href="#restaurante"><img class="imagen-carousel d-block w-100" src="images/imagen5.jpeg" alt="Third slide"></a>
     </div>
     <div class="carousel-item">
-        <a href="#"><img class="d-block w-100" src="images/cuarto1.jpeg" alt="Fourth slide"></a>
-      </div>
+      <a href="#reservas"><img class="imagen-carousel d-block w-100" src="images/imagen2.jpeg" alt="Fourth slide"></a>
+    </div>
+    
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -108,23 +111,9 @@
 
 </div>
     <div class="row">
-      <div class="col-md-12 col-lg-5">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="1000">
-      <img src="images/cuarto1.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-bs-interval="1000">
-      <img src="images/cuarto2.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-bs-interval="1000">
-      <img src="images/cuarto4.jpeg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-        </div>
+      
         <div class="col-md-12 col-lg-7 gx-5 mt-3">
-          <p>Nuestro restaurante en Marinus ya es reconocido
+          <p id="parrafoSobreNosotros">Nuestro restaurante en Marinus ya es reconocido
              en el norte del Per como uno de los mejores 
              lugares para comer y beber, contamos con platos como; 
             Ceviches, Tiraditos, 
@@ -138,6 +127,21 @@
             Chicharrón con cebolla acaramelada,
             Pasta con salsa de melón entre otros manjares</p>
     </div>
+    <div class="col-md-12 col-lg-5">
+      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div class="carousel-inner">
+  <div class="sobre-nosotros carousel-item active" data-bs-interval="3500">
+    <img src="images/cuarto1.jpeg" class="imagen-sobreNosotros d-block w-100" alt="...">
+  </div>
+  <div class="sobre-nosotros carousel-item" data-bs-interval="3500">
+    <img src="images/cuarto2.jpeg" class="imagen-sobreNosotros d-block w-100" alt="...">
+  </div>
+  <div class="sobre-nosotros carousel-item" data-bs-interval="3500">
+    <img src="images/cuarto4.jpeg" class="imagen-sobreNosotros d-block w-100" alt="...">
+  </div>
+</div>
+</div>
+      </div>
     </div>
     </div>
 </section>
@@ -153,7 +157,28 @@
 </div>
     <div class="row">
       <div class="col-md-12 col-lg-5">
-        <img src="images/comida2.jpeg" alt="about me" class="img-fluid rounded-2">
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="restaurante-item carousel-item active" data-bs-interval="3500">
+              <img src="images/comida1.jpeg" class="imagen-restaurante d-block w-100" alt="...">
+            </div>
+            <div class="restaurante-item carousel-item" data-bs-interval="3500">
+              <img src="images/comida2.jpeg" class="imagen-restaurante d-block w-100" alt="...">
+            </div>
+            <div class="restaurante-item carousel-item" data-bs-interval="3500">
+              <img src="images/comida3.jpeg" class="imagen-restaurante d-block w-100" alt="...">
+            </div>
+            <div class="restaurante-item carousel-item" data-bs-interval="3500">
+              <img src="images/comida4.jpg" class="imagen-restaurante d-block w-100" alt="...">
+            </div>
+            <div class="restaurante-item carousel-item" data-bs-interval="3500">
+              <img src="images/comida5.jpeg" class="imagen-restaurante d-block w-100" alt="...">
+            </div>
+            <div class="restaurante-item carousel-item" data-bs-interval="3500">
+              <img src="images/comida6.jpeg" class="imagen-restaurante d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
         </div>
         <div class="col-md-12 col-lg-7 gx-5 mt-3">
           <p id="parrafoRestaurante">Nuestro restaurante en Marinus ya es reconocido
@@ -205,26 +230,38 @@
       </div>
      <div class="galleryContainer">
     <div class="gallery">
-      <a href="images/cuarto1.jpeg" data-lightbox="models" data-title="Caption1">
-        <img src="images/cuarto1.jpeg" alt="">
+      <a href="images/imagen1.jpeg" data-lightbox="models" data-title="Caption1">
+        <img src="images/imagen1.jpeg" alt="">
+      </a>
+      <a href="images/imagen2.jpeg" data-lightbox="models" data-title="Caption1">
+        <img src="images/imagen2.jpeg" alt="">
+      </a>
+      <a href="images/imagen3.jpeg" data-lightbox="models" data-title="Caption1">
+        <img src="images/imagen3.jpeg" alt="">
+      </a>
+      <a href="images/imagen4.jpeg" data-lightbox="models" data-title="Caption1">
+        <img src="images/imagen4.jpeg" alt="">
+      </a>
+      <a href="images/imagen5.jpeg" data-lightbox="models" data-title="Caption1">
+        <img src="images/imagen5.jpeg" alt="">
+      </a>
+      <a href="images/imagen6.jpeg" data-lightbox="models" data-title="Caption1">
+        <img src="images/imagen6.jpeg" alt="">
+      </a>
+      <a href="images/imagen7.jpeg" data-lightbox="models" data-title="Caption1">
+        <img src="images/imagen7.jpeg" alt="">
+      </a>
+      <a href="images/comida1.jpeg" data-lightbox="models" data-title="Caption1">
+        <img src="images/comida1.jpeg" alt="">
       </a>
       <a href="images/comida2.jpeg" data-lightbox="models" data-title="Caption1">
         <img src="images/comida2.jpeg" alt="">
       </a>
-      <a href="images/cuarto1.jpeg" data-lightbox="models" data-title="Caption1">
-        <img src="images/cuarto1.jpeg" alt="">
+      <a href="images/comida3.jpeg" data-lightbox="models" data-title="Caption1">
+        <img src="images/comida3.jpeg" alt="">
       </a>
-      <a href="images/cuarto1.jpeg" data-lightbox="models" data-title="Caption1">
-        <img src="images/cuarto1.jpeg" alt="">
-      </a>
-      <a href="images/cuarto1.jpeg" data-lightbox="models" data-title="Caption1">
-        <img src="images/cuarto1.jpeg" alt="">
-      </a>
-      <a href="images/cuarto1.jpeg" data-lightbox="models" data-title="Caption1">
-        <img src="images/cuarto1.jpeg" alt="">
-      </a>
-      <a href="images/cuarto1.jpeg" data-lightbox="models" data-title="Caption1">
-        <img src="images/cuarto1.jpeg" alt="">
+      <a href="images/comida4.jpg" data-lightbox="models" data-title="Caption1">
+        <img src="images/comida4.jpeg" alt="">
       </a>
       
     </div>

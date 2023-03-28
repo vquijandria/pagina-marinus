@@ -168,11 +168,30 @@ section{
     bottom: 220
   }
 
+  .imagen-carousel {
+    object-fit: cover;
+  }
+
+  /*Seccion Sobre Nosotros*/
+
+  .sobre-nosotros{
+    height: 30vh;
+  }
+
+  #parrafoSobreNosotros{
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+
   /*Seccion Restaurante*/
 
   #parrafoRestaurante {
     font-size: 20px;
     font-family: sans-serif
+  }
+
+  .restaurante-item{
+    height: 30vh;
   }
 
   /*Seccion Galeria*/
