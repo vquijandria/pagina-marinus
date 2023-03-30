@@ -28,6 +28,12 @@ body{
     scroll-behavior: smooth;
     scroll-padding-top: 5.5rem;
 }
+.espaciado {
+  width: 10px;
+}
+.punto {
+  color: #4a7ac7;
+}
 /*Responsive Design*/
 
 @media only screen and (max-width: 1000px) {
@@ -174,14 +180,25 @@ section{
 
   /*Seccion Sobre Nosotros*/
 
-  .sobre-nosotros{
-    height: 30vh;
+
+  
+  .imagen-sobreNosotros{
+    border-radius: 30px;
   }
+
+  .carouselSobreNosotros{
+    height: 140%;
+    width: 150%;
+  }
+
+  
 
   #parrafoSobreNosotros{
     font-size: 20px;
     font-family: sans-serif;
   }
+
+  
 
   /*Seccion Restaurante*/
 
@@ -192,6 +209,16 @@ section{
 
   .restaurante-item{
     height: 30vh;
+  }
+
+  .imagen-restaurante{
+    border-radius: 30px;
+    
+   
+  }
+
+  .carouselRestaurante{
+    
   }
 
   /*Seccion Galeria*/
