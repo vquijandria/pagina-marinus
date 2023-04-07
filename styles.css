@@ -265,6 +265,7 @@ section{
   /*Seccion Restaurante*/
 
   #parrafoRestaurante {
+    margin-left: 10%;
     font-size: 20px;
     font-family: sans-serif
   }
