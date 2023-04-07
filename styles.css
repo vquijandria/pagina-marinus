@@ -65,6 +65,66 @@ body{
         width: 82vw;
         height: 29vh;
     }
+    #parrafoRestaurante {
+      font-size: 20px;
+      font-family: sans-serif
+    }
+  
+  
+    .imagen-restaurante{
+      border-radius: 15px;
+      
+     
+    }
+  
+    .imagen-sobreNosotros{
+      height: 45vh;
+      border-radius: 30px;
+    }
+
+  
+    #carouselSobreNosotrosContainer{
+      height: 60vh;
+      width: 100vw;
+    }
+
+    .carouselSobreNosotros {
+      width: 90vw!important;
+      height: 300px!important;
+    }
+  
+    
+  
+    #parrafoSobreNosotros{
+      font-size: 17px;
+      font-family: sans-serif;
+    }
+
+    .sobre-nosotros.carousel-item.active{
+      height: 300px!important;
+    }
+
+  
+    .imagen-restaurante{
+      height: 45vh;
+      border-radius: 20px;
+    }
+
+    .restaurante-item.carousel-item.active {
+      height: 300px!important;
+    }
+  
+    .carouselRestaurante{
+      width: 90vw!important;
+      height: 140%;
+  
+    }
+
+    #parrafoRestaurante {
+      font-size: ;
+    }
+
+
   }
 
 /*Seccion NavBar*/
@@ -188,13 +248,13 @@ section{
 
   .carouselSobreNosotros{
     height: 140%;
-    width: 150%;
+    width: 35vw;
   }
 
   
 
   #parrafoSobreNosotros{
-    font-size: 20px;
+    font-size: 17px;
     font-family: sans-serif;
   }
 
@@ -207,9 +267,6 @@ section{
     font-family: sans-serif
   }
 
-  .restaurante-item{
-    height: 30vh;
-  }
 
   .imagen-restaurante{
     border-radius: 30px;
@@ -218,7 +275,10 @@ section{
   }
 
   .carouselRestaurante{
-    
+    width:30vw;
+    height: 140%;
+    margin-right: 10px;
+
   }
 
   /*Seccion Galeria*/
